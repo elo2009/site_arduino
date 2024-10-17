@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tinkercard (semafaro simples)</title>
+</head>
+<body>
+   <nav>
+    <a href="index.html">principal</a>
+    <a href="arduino.html">arduino</a>
+    <a href="arduinoduplo.html">arduino duplo</a>
+    <a href="tinkercard.html">tinkercard</a>
+    <a href="tinkerduplo.html">tinkercard duplo</a>
+    <a href="tinkercard_crescente.html">  Contador crescente </a>
+    <a href="tinkercard_decrescente.html">contador decrescente</a>
+    <a href="decrescente_semafaro.html">contador semafaro</a>
+   </nav> 
+   <br>
+ <h1>semafaro simples feito no tinkercard:</h1>
+   <div>
+    <img src="img_semafaro_simples.jpg" alt="semafaro simples"><br>
+    <small>fonte: autor</small>
+   </div>
+<br>
+<h1>codigo em blocos:</h1>
+<br>
+<div>
+    <img src="img_codigo_semafaro_simples.jpg" alt="codigo em blocos">
+    <small>fonte: autor</small>
+</div>
+<br>
+<pre>// C++ code
+    //
+    void setup()
+    {
+      pinMode(12, OUTPUT);
+      pinMode(8, OUTPUT);
+      pinMode(4, OUTPUT);
+    }
+    
+    void loop()
+    {
+      digitalWrite(12, HIGH);
+      delay(7000); // Wait for 7000 millisecond(s)
+      digitalWrite(12, LOW);
+      digitalWrite(8, HIGH);
+      delay(2000); // Wait for 2000 millisecond(s)
+      digitalWrite(8, LOW);
+      digitalWrite(4, HIGH);
+      delay(5000); // Wait for 5000 millisecond(s)
+      digitalWrite(4, LOW);
+      delay(1000); // Wait for 1000 millisecond(s)
+      delay(1); // Wait for 1 millisecond(s)
+    }
+    </pre>
+</body>
+</html>
